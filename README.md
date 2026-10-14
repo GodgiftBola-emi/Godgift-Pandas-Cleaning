@@ -62,6 +62,7 @@ Finally, I used Pandas' fillna() method to replace missing values with a space.
 My intention was to prevent missing entries from appearing as NaN in the resulting table. However, I did not assign the result back to df or use an in-place operation.
 Consequently, the operation displays a version of the DataFrame with missing values replaced, but the underlying DataFrame remains unchanged by this final statement.
 This was an important learning point because a cleaning operation can produce the expected output in a notebook cell without necessarily changing the dataset that will be used in subsequent steps.
+
 Conclusion:
 Through this project, I practised using Python and Pandas to clean a customer call list and prepare it for further analysis. I worked on removing duplicate records, dropping an unnecessary column, correcting unwanted characters in names, handling phone number inconsistencies, splitting address information into separate fields, and standardising customer-related values.
 One of the key lessons I took from this exercise was that data cleaning involves more than applying individual functions. It also requires understanding how each operation affects the dataset, checking the results, and ensuring that the changes are applied correctly. For example, I learned the importance of assigning the output of a cleaning operation back to the DataFrame when I want the changes to persist.
